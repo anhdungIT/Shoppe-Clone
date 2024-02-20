@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./grid-system.css">
+    <link rel="stylesheet" href="./reponsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-32x32.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest"></link>
+</head>
+<body>
+    <div class="container-admin">
+        <div class="navigation">
+            <ul>
+                <li><a href="#">
+                    <span class="icon-navigation__admin"><img src="./img/app/logo.png" alt=""></span>
+                    <span class="brand" style="font-size: 4rem;margin-top: 15px;">DShop</span>
+                </a></li>
+                <li class="navigation-item"><a href="#tab_admin1">
+                    <span class="icon-navigation__admin"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="brand">Trang chủ</span>
+                </a></li>
+                <li class="navigation-item"><a href="#tab_admin2">
+                    <span class="icon-navigation__admin"><ion-icon name="cart-outline"></ion-icon></span>
+                    <span class="brand">Quản lý sản phẩm</span>
+                </a></li>
+                <li class="navigation-item"><a href="#tab_admin3">
+                    <span class="icon-navigation__admin"><ion-icon name="people-outline"></ion-icon></span>
+                    <span class="brand">Quản lý khách hàng</span>
+                </a></li>
+                <li class="navigation-item"><a href="#tab_admin4">
+                    <span class="icon-navigation__admin"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                    <span class="brand">Nhắn tin</span>
+                </a></li>
+                <li class="navigation-item"><a href="#tab_admin5">
+                    <span class="icon-navigation__admin"><ion-icon name="albums-outline"></ion-icon></span>
+                    <span class="brand">Blog</span>
+                </a></li>
+                <li class="navigation-item"><a href="#tab_admin6">
+                    <span class="icon-navigation__admin"><ion-icon name="cog-outline"></ion-icon></span>
+                    <span class="brand">Cài đặt</span>
+                </a></li>
+                <li><a href="index.html">
+                    <span class="icon-navigation__admin"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="brand">Đăng xuất</span>
+                </a></li>
+            </ul>
+        </div>
+        <div class="main__admin">
+                <div class="topbar">
+                    <div class="toggle">
+                        <ion-icon name="grid-outline"></ion-icon>
+                    </div>
+                    <div class="search-admin">
+                        <label for="" id="">
+                            <input type="text" placeholder="Nhập từ khóa để tìm kiếm...">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </label>
+                    </div>
+                    <div class="dark-light__them">
+                        <span class="them active_them"><i class="fa-solid fa-sun"></i></span>
+                        <span class="them"><i class="fa-solid fa-moon"></i></span>
+                    </div>
+                    <div class="user-admin">
+                        <img src="./img/mô hình/luffy.png" alt="">
+                    </div>
+                </div>
+            <div class="tab-content_admin" id="tab_admin1">
+                <div class="card-box">
+                    <div class="card">
+                        <div>
+                            <div class="numbers">1,504</div>
+                            <div class="card_name">Số lượng người truy cập web trong ngày</div>
+                        </div>
+                        <div class="iconBx">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">77</div>
+                            <div class="card_name">Tổng sản phẩm</div>
+                        </div>
+                        <div class="iconBx">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">1,704</div>
+                            <div class="card_name">Bình luận</div>
+                        </div>
+                        <div class="iconBx">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">$2101</div>
+                            <div class="card_name">Doanh thu</div>
+                        </div>
+                        <div class="iconBx">
+                            <ion-icon name="cash-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="graphBox">
+                    <div class="box">
+                        <h1 class="title-box">Tổng quan mặt hàng trong shop</h1>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="box">
+                        <h1 class="title-box">Doanh thu theo tháng</h1>
+                        <canvas id="earning"></canvas>
+                    </div>
+                </div>
+                <div class="graphBox">
+                    <div class="box">
+                        <h1 class="title-box">Cập nhật gần đây</h1>
+                        <div class="detail_box">
+                            <div class="imgBx"><img src="./img/mô hình/zoro_tamlong.png" alt=""></div>
+                            <div class="content_deteil-box">
+                                <h3><b>Đạt Nguyễn</b> đã duyệt đơn hàng có mã HD01 thành công</h3>
+                                <span>7 phút trước</span>
+                            </div>
+                        </div>
+                        <div class="detail_box">
+                            <div class="imgBx"><img src="./img/mô hình/kaido.png" alt=""></div>
+                            <div class="content_deteil-box">
+                                <h3><b>Tuyển Phạm</b> đã duyệt đơn hàng có mã AS65 thành công</h3>
+                                <span>10 phút trước</span>
+                            </div>
+                        </div>
+                        <div class="detail_box">
+                            <div class="imgBx"><img src="./img/mô hình/madara.png" alt=""></div>
+                            <div class="content_deteil-box">
+                                <h3><b>Hậu Trần</b> đã xác nhận hủy đơn hàng AG58</h3>
+                                <span>12 phút trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h1 class="title-box">Phân tích bán hàng</h1>
+                        <div class="graphBox2">
+                            <div class="box">
+                                <div class="iconBox">
+                                    <ion-icon name="bag-handle-outline"></ion-icon>
+                                </div>
+                                <div class="detail__box">
+                                    <h2>Đơn hàng offline</h2>
+                                    <div class="detai_numberBox">
+                                        <span>120</span><span class="numberBox">+15%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="iconBox">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                </div>
+                                <div class="detail__box">
+                                    <h2>Đơn hàng onine</h2>
+                                    <div class="detai_numberBox">
+                                        <span>80</span><span class="numberBox">+5%</span>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="iconBox">
+                                    <ion-icon name="people-circle-outline"></ion-icon>
+                                </div>
+                                <div class="detail__box">
+                                    <h2>Khách hàng mới</h2>
+                                    <div class="detai_numberBox">
+                                        <span>150</span><span class="numberBox">+35%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details__admin">
+                    <div class="recent_orders">
+                        <div class="card_header">
+                            <h1>Đơn hàng gần đây</h1>
+                            <a href="#" class="btn-admin">Xem tất cả</a>
+                        </div>
+                        <table class="table__recent_orders">
+                            <thead>
+                                <tr class="title-card">
+                                    <td>Tên sản phẩm</td>
+                                    <td>Giá</td>
+                                    <td>Thanh toán</td>
+                                    <td>Trạng thái</td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td><span class="pending">Chờ xác nhận</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td><span class="delivered">Giao thành công</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td><span class="return">Trả hàng</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td ><span class="inprogress">Đang giao</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td><span class="delivered">Giao thành công</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td ><span class="inprogress">Đang giao</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td><span class="return">Trả hàng</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td><span class="delivered">Giao thành công</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td><span class="delivered">Giao thành công</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoro tam long</td>
+                                        <td>1.200.000đ</td>
+                                        <td>Thanh toán khi nhận hàng</td>
+                                        <td><span class="pending">Chờ xác nhận</span></td>
+                                    </tr>
+                                </tbody>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="recent_customers">
+                        <div class="card_header">
+                            <h1>Khách hàng gần đây</h1>
+                        </div>
+                        <table>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/zoro_tamlong.png" alt=""></div></td>
+                                <td><h4>David</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/luffy-gear4.png" alt=""></div></td>
+                                <td><h4>Kai</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/luffy.png" alt=""></div></td>
+                                <td><h4>John</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/kaido.png" alt=""></div></td>
+                                <td><h4>Depp</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/harley_quinn.png" alt=""></div></td>
+                                <td><h4>Which</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/fate_grand.png" alt=""></div></td>
+                                <td><h4>Bad</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/Frieza.png" alt=""></div></td>
+                                <td><h4>Chavid</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/cuu-vi.png" alt=""></div></td>
+                                <td><h4>Halord</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/god_dragon.png" alt=""></div></td>
+                                <td><h4>Beckham</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx">
+                                    <img src="./img/mô hình/madara.png" alt="">
+                                </div></td>
+                                <td><h4>Ronin</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="./img/mô hình/trung_tru.png" alt=""></div></td>
+                                <td><h4>Kenshi</h4><br><span>Hà Nội</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content_admin" id="tab_admin2">
+                <h1 class="title-tab_admin2-main">Quản lý sản phẩm</h1>
+                <div class="product-management">
+                    <div class="title-tab_admin2">+ Thêm sản phẩm</div>
+                    <div class="the-record">
+                        <span class="show-number-record">Hiển thị <input type="text" placeholder="5" id="number-record"> bản ghi</span>
+                        <span class="show-number-record">Tìm kiếm <input type="text" placeholder="Gõ vào ký tự cần tìm..." id="search-text"></span>
+                    </div>
+                    <table class="table__product-admin">
+                        <thead>
+                            <tr class="title-card-admin">
+                                <td>Mã sản phẩm</td>
+                                <td>Ảnh</td>
+                                <td>Phân loại</td>
+                                <td>Tên sản phẩm</td>
+                                <td>Đơn giá</td>
+                                <td>Ngày thêm</td>
+                                <td>Thao tác</td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tbody>
+                                <tr class="card__admin">
+                                    <td>001</td>
+                                    <td class="img-product__admin"><img src="./img/mô hình/zoro_tamlong.png" alt=""></td>
+                                    <td>Mô hình One Piece</td>
+                                    <td>Zoro tam long</td>
+                                    <td>1.200.000đ</td>
+                                    <td>7/6/2022</td>
+                                    <td class="icon-manipulation"><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                </tr>
+                                <tr class="card__admin">
+                                    <td>002</td>
+                                    <td class="img-product__admin"><img src="./img/mô hình/luffy-gear4.png" alt=""></td>
+                                    <td>Mô hình One Piece</td>
+                                    <td>Luffy Gear 4</td>
+                                    <td>800.000đ</td>
+                                    <td>7/6/2022</td>
+                                    <td class="icon-manipulation"><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                </tr>
+                                <tr class="card__admin">
+                                    <td>003</td>
+                                    <td class="img-product__admin"><img src="./img//phụ kiện/butterfly-knife.png" alt=""></td>
+                                    <td>Phụ kiện CS:GO</td>
+                                    <td>Butterfly Knife thép đúc</td>
+                                    <td>300.000đ</td>
+                                    <td>7/6/2022</td>
+                                    <td class="icon-manipulation"><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                </tr>
+                                <tr class="card__admin">
+                                    <td>004</td>
+                                    <td class="img-product__admin"><img src="./img/mô hình/kaido.png" alt=""></td>
+                                    <td>Mô hình One Piece</td>
+                                    <td>Kaido bách thú</td>
+                                    <td>1.000.000đ</td>
+                                    <td>7/6/2022</td>
+                                    <td class="icon-manipulation"><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                </tr>
+                                <tr class="card__admin">
+                                    <td>005</td>
+                                    <td class="img-product__admin"><img src="./img/phụ kiện/awp.png" alt=""></td>
+                                    <td>Phụ kiện CS:GO</td>
+                                    <td>Mô hình AWP Gungnir</td>
+                                    <td>250.000đ</td>
+                                    <td>7/6/2022</td>
+                                    <td class="icon-manipulation"><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </table>   
+                </div>                    
+            </div>
+            <div class="tab-content_admin" id="tab_admin3">
+                <h1 class="title-tab_admin2-main">Quản lý khách hàng</h1>
+                <div class="graphBox">
+                    <div class="box">
+                        <h1 class="title-box">Biểu đồ khách hàng mua hàng</h1>
+                        <canvas id="customers"></canvas>
+                    </div>
+                    <div class="box">
+                        <h1 class="title-box">Tăng trưởng khách hàng</h1>
+                        <canvas id="numberCustomers"></canvas>
+                    </div>
+                </div>
+                <div class="product-management">
+                    <div class="graphBox3">
+                        <div class="box">
+                            <h1 class="title-box">Khách hàng</h1>
+                            <table class="table__recent_customer">
+                                <thead>
+                                    <tr class="title-customer">
+                                        <td>Tên khách hàng</td>
+                                        <td>Mã sản phẩm</td>
+                                        <td>Giá</td>
+                                        <td>Địa chỉ</td>
+                                        <td>Trạng thái</td>
+                                    </tr>
+                                </thead>
+                                <thead>
+                                    <tbody>
+                                        <tr class="detai__customer">
+                                            <td>Nguyễn Văn Quỹ</td>
+                                            <td>MSP07</td>
+                                            <td>700.000đ</td>
+                                            <td>Việt Hưng - Văn Lâm - Hưng Yên</td>
+                                            <td><span class="pending">Chờ xác nhận</span></td>
+                                        </tr>
+                                        <tr class="detai__customer">
+                                            <td>Đỗ Quốc Oai</td>
+                                            <td>MSP11</td>
+                                            <td>200.000đ</td>
+                                            <td>Đình Dù - Văn Lâm - Hưng Yên</td>
+                                            <td><span class="delivered">Giao thành công</span></td>
+                                        </tr>   
+                                        <tr class="detai__customer">
+                                            <td>Trịnh Thanh Toại</td>
+                                            <td>MSP21</td>
+                                            <td>900.000đ</td>
+                                            <td>Việt Hưng - Văn Lâm - Hưng Yên</td>
+                                            <td><span class="return">Trả hàng</span></td>
+                                        </tr>
+                                        <tr class="detai__customer">
+                                            <td>Trần Văn Thắng</td>
+                                            <td>MSP03</td>
+                                            <td>900.000đ</td>
+                                            <td>Lạc Đạo - Văn Lâm - Hưng Yên</td>
+                                            <td><span class="delivered">Giao thành công</span></td>
+                                        </tr>
+                                        <tr class="detai__customer">
+                                            <td>Nguyễn Tiến Đạt</td>
+                                            <td>MSP07</td>
+                                            <td>777.777đ</td>
+                                            <td>Ngọc Quỳnh - Văn Lâm - Hưng Yên</td>
+                                            <td><span class="delivered">Giao thành công</span></td>
+                                        </tr>
+                                        <tr class="detai__customer">
+                                            <td>Nguyễn Văn Quỹ</td>
+                                            <td>MSP06</td>
+                                            <td>600.000đ</td>
+                                            <td>Việt Hưng - Văn Lâm - Hưng Yên</td>
+                                            <td><span class="pending">Chờ xác nhận</span></td>
+                                        </tr>
+                                    </tbody>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="box">
+                            <h1 class="title-box">Xếp hạng khách hàng</h1>
+                            <ul class="list_rank-customers">
+                                <li class="cusomers-item">
+                                    <div class="imgRank">
+                                        <img src="./img/mô hình/zoro_tamlong.png" alt=""><span class="ranking">#1</span>
+                                    </div>
+                                    <div class="nameRank">
+                                        <h4>Đức</h4><br><span>Đống Đa</span>
+                                    </div>
+                                </li>
+                                <li class="cusomers-item">
+                                    <div class="imgRank">
+                                        <img src="./img/mô hình/kaido.png" alt=""><span class="ranking">#2</span>
+                                    </div>
+                                    <div class="nameRank">
+                                        <h4>Luân</h4><br><span>Việt Hưng</span>
+                                    </div>
+                                </li>
+                                <li class="cusomers-item">
+                                    <div class="imgRank">
+                                        <img src="./img/mô hình/Frieza.png" alt=""><span class="ranking">#3</span>
+                                    </div>
+                                    <div class="nameRank">
+                                        <h4>Việt</h4><br><span>Hành Lạc</span>
+                                    </div>  
+                                </li>
+                                <li class="cusomers-item">
+                                    <div class="imgRank">
+                                        <img src="./img/mô hình/luffy-gear4.png" alt=""><span class="ranking">#4</span>
+                                    </div>
+                                    <div class="nameRank">
+                                        <h4>Quỹ</h4><br><span>Như Quỳnh</span>
+                                    </div>         
+                                </li>
+                                <li class="cusomers-item">
+                                    <div class="imgRank">
+                                        <img src="./img/mô hình/madara.png" alt=""><span class="ranking">#4</span>
+                                    </div>
+                                    <div class="nameRank">
+                                        <h4>Toại</h4><br><span>Lạc Đạo</span>
+                                    </div>         
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content_admin" id="tab_admin4">
+                <h2 class="title-tab_admin2-main">Nhắn tin<ion-icon name="logo-wechat"></ion-icon></h2>
+                <div class="product-management">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="c-3 l-3 m-3 leftSide">
+                                <div class="headerSide">
+                                    <div class="userimg">
+                                        <img src="./img/mô hình/Frieza.png" alt="" class="coverimg">
+                                    </div>
+                                    <ul class="nav_icons">
+                                        <li><ion-icon name="scan-circle-outline"></ion-icon></li>
+                                        <li><ion-icon name="chatbubbles-outline"></ion-icon></li>
+                                        <li><ion-icon name="ellipsis-vertical-outline"></ion-icon></li>
+                                    </ul>
+                                </div>
+                                <div class="search_chat">
+                                    <div>
+                                        <input type="text" placeholder="Tìm kiếm hoặc bắt đầu nhắn tin"><ion-icon name="search-circle-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="chat_list">
+                                    <div class="block active_block">
+                                        <div class="imgbx">
+                                            <img src="./img/mô hình/cuu-vi.png" alt="" class="coverimg">
+                                        </div>
+                                        <div class="details_imgbx">
+                                            <div class="list_head">
+                                                <h4>Văn Quỹ</h4>
+                                                <p class="time_out">10:59</p>
+                                            </div>
+                                            <div class="message_p">
+                                                <p>Cái này bao nhiêu vậy Shop</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="imgbx">
+                                            <img src="./img/mô hình/batman.png" alt="" class="coverimg">
+                                        </div>
+                                        <div class="details_imgbx">
+                                            <div class="list_head">
+                                                <h4>Đỗ Việt</h4>
+                                                <p class="time_out">11:59</p>
+                                            </div>
+                                            <div class="message_p">
+                                                <p>Shop cho mình hỏi mua nhiều mặt hàng có chương trình khuyến mại không? Vậy shop</p>
+                                                <b>3</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="imgbx">
+                                            <img src="./img/mô hình/madara.png" alt="" class="coverimg">
+                                        </div>
+                                        <div class="details_imgbx">
+                                            <div class="list_head">
+                                                <h4>Thành Vũ</h4>
+                                                <p class="time_out">14:25</p>
+                                            </div>
+                                            <div class="message_p">
+                                                <p>Cái này bao nhiêu vậy Shop</p>
+                                                <b>1</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="imgbx">
+                                            <img src="./img/mô hình/luffy.png" alt="" class="coverimg">
+                                        </div>
+                                        <div class="details_imgbx">
+                                            <div class="list_head">
+                                                <h4>Thanh Toại</h4>
+                                                <p class="time_out">22:29</p>
+                                            </div>
+                                            <div class="message_p">
+                                                <p>Cái này bao nhiêu vậy Shop</p>
+                                                <b>2</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="imgbx">
+                                            <img src="./img/mô hình/zoro_tamlong.png" alt="" class="coverimg">
+                                        </div>
+                                        <div class="details_imgbx">
+                                            <div class="list_head">
+                                                <h4>Oai Đỗ</h4>
+                                                <p class="time_out">11:59</p>
+                                            </div>
+                                            <div class="message_p">
+                                                <p>Cái này bao nhiêu vậy Shop</p>
+                                                <b>5</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="imgbx">
+                                            <img src="./img/mô hình/pain.png" alt="" class="coverimg">
+                                        </div>
+                                        <div class="details_imgbx">
+                                            <div class="list_head">
+                                                <h4>Văn Luân</h4>
+                                                <p class="time_out">10:59</p>
+                                            </div>
+                                            <div class="message_p">
+                                                <p>Hello shop</p>
+                                                <b>2</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="imgbx">
+                                            <img src="./img/mô hình/gilgamesh.png" alt="" class="coverimg">
+                                        </div>
+                                        <div class="details_imgbx">
+                                            <div class="list_head">
+                                                <h4>Văn Thắng</h4>
+                                                <p class="time_out">10:59</p>
+                                            </div>
+                                            <div class="message_p">
+                                                <p>Cái này bao nhiêu vậy Shop</p>
+                                                <b>2</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-9 l-9 m-9 rightSide">
+                                <div class="headerSide">
+                                    <div class="imgText">
+                                        <div class="userimg">
+                                            <img src="./img/mô hình/Frieza.png" alt="" class="coverimg">
+                                        </div>
+                                        <h4>Văn Quỹ</h4>
+                                        <p>Online</p>
+                                    </div>
+                                    <ul class="nav_icons">
+                                        <li><ion-icon name="call-outline"></ion-icon></li>
+                                        <li><ion-icon name="search-outline"></ion-icon></li>
+                                        <li><ion-icon name="ellipsis-vertical-outline"></ion-icon></li>
+                                    </ul>
+                                </div>   
+                                <div class="chatBox">
+                                    <div class="message your_message">
+                                        <p>Hi<br><span>12:15</span></p>
+                                    </div>
+                                    <div class="message my_message">
+                                        <p>Hello<br><span>12:16</span></p>
+                                    </div>
+                                    <div class="message your_message">
+                                        <p>Cho mình hỏi shop còn mẫu mô hình Zoro tam long không<br><span>12:16</span></p>
+                                    </div>
+                                    <div class="message my_message">
+                                        <p>Bên mình hiện vẫn đang còn hàng nha bạn<br><span>12:17</span></p>
+                                    </div>
+                                    <div class="message your_message">
+                                        <p>Giá cả như nào vậy shop<br><span>12:19</span></p>
+                                    </div>
+                                    <div class="message my_message">
+                                        <p>Mẫu đấy bên mình hiện đang có giá là 1.200.000đ<br><span>12:22</span></p>
+                                    </div>
+                                    <div class="message your_message">
+                                        <p>Phí ship như nào vậy<br><span>12:23</span></p>
+                                    </div>
+                                    <div class="message my_message">
+                                        <p>Miễn phí vận chuyển đối với khu vực Hà Nội và Sài Gòn<br><span>12:25</span></p>
+                                    </div>
+                                    <div class="message my_message">
+                                        <p>Còn các khu vực khác còn tùy vào vị trí giao hàng<br><span>12:26</span></p>
+                                    </div>   
+                                </div> 
+                                <div class="chatBox_input">
+                                    <ion-icon name="happy-outline"></ion-icon>
+                                    <ion-icon name="attach-outline"></ion-icon>
+                                    <ion-icon name="mic-outline"></ion-icon>
+                                    <form action="#" class="chatBox_form">
+                                        <textarea rows="1" placeholder="Viết vào đây......." class="chatbox-message-input"></textarea>
+                                        <button type="submit" class="submit_chat" style="outline: none;"><ion-icon name="navigate-outline"></ion-icon></button>
+                                    </form>
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content_admin" id="tab_admin5">
+                <h1 class="title-tab_admin2-main">Blog</h1>
+                <div class="graphBox4">
+                    <div class="box">
+                        <div class="graphBox2">
+                            <div class="card">
+                                <div>
+                                    <div class="numbers">120</div>
+                                    <div class="card_name">Tổng số bài</div>
+                                </div>
+                                <div class="iconBx">
+                                    <ion-icon name="book-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div>
+                                    <div class="numbers">4,504</div>
+                                    <div class="card_name">Số lượng người đọc trên blog</div>
+                                </div>
+                                <div class="iconBx">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div>
+                                    <div class="numbers">3,254</div>
+                                    <div class="card_name">Lượt bình luận</div>
+                                </div>
+                                <div class="iconBx">
+                                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="title-box">Khách truy cập hàng đầu</h1>
+                        <canvas id="blog"></canvas>
+                    </div>
+                    <div class="box">
+                        <div class="box">
+                            <div class="writer">
+                                <div class="img_writer">
+                                    <img src="./img/mô hình/batman.png" alt="">
+                                </div>
+                                <div class="information_writer">
+                                    <p>Đạt Nguyễn</p>
+                                    <span>Người tạo web</span>
+                                </div>
+                                <div class="custom_writer">
+                                    <ion-icon name="cog-outline"></ion-icon>
+                                    Cài đặt
+                                </div>
+                            </div>
+                            <div class="more_information">
+                                <div class="register_writer">
+                                    <p>Tổng số bài</p>
+                                    <span>10</span>
+                                </div>
+                                <div class="register_writer">
+                                    <p>Đăng ký</p>
+                                    <span>10K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h1 class="title-box">Đăng ký</h1>
+                            <div class="information_register">
+                                <div class="detali_register">
+                                    <p>Tổng số đăng ký</p>
+                                    <span>10,512</span><span class="numberBox2"><i class="fa-solid fa-arrow-trend-up"></i>5%</span>
+                                </div>
+                                <div class="icon_register">
+                                    <ion-icon name="people-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon_subscribe">
+                                <i class="fa-solid fa-envelope-open"></i>
+                            </div>
+                            <div class="title_subcribe">
+                                <h2>đăng ký</h2>
+                                <p>Đăng ký bản tin của chúng tôi và nhận được thông báo mới nhất.</p>
+                            </div>
+                            <div class="email_subcribe">
+                                <input type="text" placeholder="Nhập địa chỉ mail">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="graphBox">
+                    <div class="box">
+                        <h1 class="title-box">Hoạt động</h1>
+                        <div class="activity">
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 1</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Mô hình là gì?</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 2</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Top các mô...</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 7</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Top 10 bộ a...</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 6</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Thú chới mô...</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 1</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Mô hình là gì?</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 2</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Top các mô...</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 7</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Top 10 bộ a...</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 6</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Thú chới mô...</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 1</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Mô hình là gì?</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 2</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Top các mô...</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 7</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Top 10 bộ a...</div>
+                            </div>
+                            <div class="detail_activity">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <div class="time_activity">Tháng 6</div>
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                <div class="title_blog">Thú chới mô...</div>
+                            </div>
+                            <div class="view_more">
+                                view more 
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="box">
+                        <table>
+                            <thead id="title__admin-blog">
+                                <tr>
+                                    <td>Bài viết</td>
+                                    <td>Lượt thích</td>
+                                    <td>Bình luận</td>
+                                    <td>Tùy chỉnh</td>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tbody id="detail__admin-blog">
+                                    <tr>
+                                        <td class="img_blog-admin"><img src="./img/blog/deadpool.png" alt=""><span>Figure là gì? Những kiến thức cơ bản về figure</span></td>
+                                        <td><i class="fa-solid fa-thumbs-up"></i> <span>777</span> </td>
+                                        <td><ion-icon name="chatbubble-ellipses-outline"></ion-icon><span>69</span></td>
+                                        <td class="icon-manipulation"><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="img_blog-admin"><img src="./img/blog/asuna-and-yui.png" alt=""><span>BẠN BIẾT GÌ VỀ FIGURE TRONG ANIME - MANGA?</span></td>
+                                        <td><i class="fa-solid fa-thumbs-up"></i> <span>777</span> </td>
+                                        <td><ion-icon name="chatbubble-ellipses-outline"></ion-icon><span>69</span></td>
+                                        <td class="icon-manipulation"><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="img_blog-admin"><img src="./img/blog/goku.png" alt=""><span>5 cách thể hiện niềm đam mê Dragon Ball "hao tiền tốn của" nhất</span></td>
+                                        <td><i class="fa-solid fa-thumbs-up"></i> </span> 777</span></td>
+                                        <td><ion-icon name="chatbubble-ellipses-outline"></ion-icon><span>69</span></td>
+                                        <td class="icon-manipulation"><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="img_blog-admin"><img src="./img/blog/overlord.png" alt=""><span>OVERLORD "GÂY BÃO" VỚI 2 DỰ ÁN LỚN: SEASON 4 VÀ MOVIE!?</span></td>
+                                        <td><i class="fa-solid fa-thumbs-up"></i> <span>777</span> </td>
+                                        <td><ion-icon name="chatbubble-ellipses-outline"></ion-icon><span>69</span></td>
+                                        <td class="icon-manipulation flex"><i class="fa-solid fa-pen"></i> <i class="fa-solid fa-trash-can"></i></td>
+                                    </tr>
+                                </tbody>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content_admin" id="tab_admin6">
+                <h1 class="title-tab_admin2-main">Quản lý khách hàng</h1>
+                <div class="product-management">
+                    <div class="title-tab_admin2">Đang chờ xử lý.......</div>
+                    <div class="the-record">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overplay">
+            <div class="form-add__admin"> 
+                <div class="form-add__admin-container">
+                    <div class="header-title-form">
+                        <h1>Nhập thông tin sản phẩm</h1>
+                        <i class="fa-solid fa-xmark close"></i>
+                    </div>
+                    <div class="detail-form">
+                        <div class="title-form-add">
+                            <ul>
+                                <li>Mã sản phẩm</li>
+                                <li>Ảnh</li>
+                                <li>Phân loại</li>
+                                <li>Tên sản phẩm</li>
+                            </ul>
+                        </div>
+                        <div class="deteil-text">
+                            <ul>
+                                <li><input type="text" class="text-detai__admin" placeholder="Nhập mã sản phẩm"></li>
+                                <li><input type="text" id="img-detail__admin" placeholder="Chọn ảnh hoặc thả ảnh tại đây" readonly></li>
+                                <li>
+                                    <div class="type-product">
+                                        <section>
+                                            <select name="" id="type-list">
+                                                <option value="One Piece">One Piece</option>
+                                                <option value="Phụ kiện">Phụ kiện</option>
+                                                <option value="Naruto">Naruto</option>
+                                                <option value="Dragon Ball">Dragon Ball</option>
+                                                <option value="CS:GO">CS:GO</option>
+                                                <option value="Mô hình DC Comic">Mô hình DC Comic</option>
+                                                <option value="Khác">Khác</option>
+                                            </select>
+                                        </section>
+                                    </div>
+                                </li>
+                                <li><input type="text" maxlength="50" class="text-detai__admin" placeholder="Nhập tên sản phẩm"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="number-detail-admin-content">
+                    <div><span>Giá</span><input type="text" class="number-detai__admin" placeholder="Nhập giá  sản phẩm"></div>
+                    <div><span>Ngày nhập</span><input type="date" class="number-detai__admin"></div>
+                </div>
+                <div class="btn-add-form__admin">Xác nhận</div>
+            </div>
+                
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+<script src="my_chart.js"></script>
+<script>
+    // add class hovered
+    let list =document.querySelectorAll('.navigation li');
+    function activeLink(){
+        list.forEach((item) =>
+        item.classList.remove(''));
+        this.classList.add('hovered');
+    }
+    list.forEach((item) => 
+    item.addEventListener('mouseover',activeLink));
+    // menu toggle
+    let toggle = document.querySelector('.toggle');
+    let navigation = document.querySelector('.navigation');
+    let main = document.querySelector('.main__admin');
+
+    toggle.onclick = function(){
+        navigation.classList.toggle('active');
+        main.classList.toggle('active')
+    }
+    // hàm ẩn tab_content
+    $('.tab-content_admin').hide();
+    // hàm hiển thị tab_content đầu tiên
+    $('.tab-content_admin:nth-child(2)').fadeIn();
+    // hàm chuyển class active 
+    $('.navigation-item').click(function(){
+            // show tabs content item
+            let id_tab_content =  $(this).children('a').attr('href');
+            $('.tab-content_admin').hide();
+            $(id_tab_content).fadeIn();
+            return false;
+        });
+    // hiển thị form thêm sản phẩm
+    $('.title-tab_admin2').click(function(){
+        $('.overplay').css('display','flex');
+    });
+    // đóng form thêm sản phẩm
+    $('.close').click(function(){
+        $('.overplay').css('display','none');
+    });
+    // chuyển đổi them
+    const themtoggle= document.querySelector(".dark-light__them");
+    themtoggle.addEventListener('click', () =>{
+        document.body.classList.toggle('color__dark-them');
+
+        themtoggle.querySelector('span:nth-child(1)').classList.toggle('active_them');
+        themtoggle.querySelector('span:nth-child(2)').classList.toggle('active_them');
+    });
+</script>
+</html>

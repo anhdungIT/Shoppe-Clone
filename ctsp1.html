@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./grid-system.css">
+    <link rel="stylesheet" href="./reponsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-32x32.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest"></link>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <!-- navbar -->
+                <nav class="hd__navbar hide-on-mobile-table">
+                    <ul class="hd__navbar-list">
+                        <li class="hd__navbar-item  separate hidden-qr" style="cursor: pointer;">
+                            Mô hình Anime - Manga - Movie
+                        </li>
+                        <li class="hd__navbar-item">
+                            Kết nối 
+                            <a href="https://facebook.com" class="hd__navbar-icon"><i class=" fa-brands fa-facebook"></i></a> 
+                            <a href="https://instagram.com" class="hd__navbar-icon"><i class=" fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="hd__navbar-list">
+                        <li class="hd__navbar-item notify">
+                            <a href="" class="hd__navbar-link">
+                                <i class="hd__navbar-icon fa-regular fa-bell"></i>
+                                Thông báo                                
+                            </a>
+                            <!-- tạo phần thông báo ẩn đi -->
+                            <div class="hd__notify">
+                                <header class="hd__notify-title">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="hd__notify-list">
+                                    <li class="hd__notify-item">
+                                        <a href="#" class="hd__notify-link viewed">
+                                            <img src="./img/mô hình/luffy.png" alt="" class="hd__notify-img">
+                                            <div class="hd__notify-info">
+                                                <span class="hd__notify-name">Mô hình Lufffy chính hãng</span>
+                                                <span class="hd__notify-descriotion">Mô hình Luffy cao 40cm của hãng Konami</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hd__notify-item">
+                                        <a href="#" class="hd__notify-link">
+                                            <img src="./img/mô hình/batman.png" alt="" class="hd__notify-img">
+                                            <div class="hd__notify-info">
+                                                <span class="hd__notify-name">Mô hình Batman chính hãng</span>
+                                                <span class="hd__notify-descriotion">Mô hình Batman cao 180cm của nhà DC</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hd__notify-item">
+                                        <a href="#" class="hd__notify-link viewed">
+                                            <img src="./img/mô hình/naruto.png" alt="" class="hd__notify-img">
+                                            <div class="hd__notify-info">
+                                                <span class="hd__notify-name">Mô hình Naruto</span>
+                                                <span class="hd__notify-descriotion">Mô hình Naruto cao 120cm của hãng Konami</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class=" hd__notify-footer">
+                                    <a href="" class="hd__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="hd__navbar-item">
+                            <a href="" class="hd__navbar-link help">
+                                <i class="hd__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp                              
+                            </a>                            
+                        </li>
+                        <li class="hd__navbar-item  bold separate opacity">
+                            <button class="hd__navbar-link login" >Đăng nhập</button>
+                        </li>
+                        <li class="hd__navbar-item  bold opacity">
+                            <button class="hd__navbar-link register" >Đăng ký</button>
+                        </li>
+                        <li class="hd__navbar-item hd__navbar-user" >
+                            <img src="./img/mô hình/luffy.png" alt="" class="hd__navbar-user-img">
+                            <span class="hd__navbar-user-name">Nguyễn Đạt</span>
+                            <ul class="hd__navbar-user-menu">
+                                <li class="hd__navbar-user-item">
+                                    <a href="admin.html">Tài khoản của tôi</a>
+                                </li>
+                                <li class="hd__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="hd__navbar-user-item hd__navbar-user-item-separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- searrch -->
+                <div class="hd-with-search">
+                    <input type="checkbox" hidden id="mobile-menu-checkbox" class="nav__input">
+                    <label for="mobile-menu-checkbox" class="hd__mobile-menu show-on-mobile">
+                        <i class="hd__menu fa-solid fa-list-ul"></i>
+                    </label>
+                        <label for="mobile-menu-checkbox" class="nav--overplay"></label>
+                        <nav class="nav__mobile">
+                            <label for="mobile-menu-checkbox" class="nav__mobile-btn-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label>
+                            <ul class="nav__mobile-list">
+                                <li><a href="index.html" class="nav__mobile-link">Trang chủ</a></li>
+                                <li><a href="" class="nav__mobile-link login">Đăng nhập</a></li>
+                                <li><a href="" class="nav__mobile-link register">Đăng ký</a></li>
+                                <li><a href="" class="nav__mobile-link help">Trợ giúp</a></li>
+                                <li><a href="product.html" class="nav__mobile-link">Sản phẩm</a></li>
+                                <li><a href="blog.html" class="nav__mobile-link">Blog</a></li>
+                                <li><a href="" class="nav__mobile-link help">Chính sách</a></li>
+                            </ul>
+                        </nav>                 
+                    <div class="hd__logo hide-on-mobile">
+                        <a href="index.html" class="hd__logo-link">
+                            <img src="./img/app/logo-DShop.png" alt="" class="logo">
+                        </a>                          
+                    </div>
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="hd__search-checkbox">
+                    <div class="hd__search">
+                        <!-- search history -->
+                        <div class="hd__seach-input-warp">
+                            <input type="text" class="hd__seach-input" placeholder="Nhập vào từ khóa để bắt đầu tìm kiếm sản phẩm.........">
+                        </div>
+                        <button class="hd__search-btn">
+                            <i class="hd__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="hd__cart">
+                        <a href="cart.html" class="hd__cart-wrap">
+                            <i class="hd__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="hd__cart-notice">0</span>
+                            <!-- class khi ko có sản phẩm: hd__cart-list-no-cart -->
+                            <!-- class khi có sản phẩm: hd__cart-list-have-cart-->
+                            <div class="hd__cart-list hd__cart-list-no-cart">
+                                <img src="./img/app/no_cart.png" alt="" class="hd__cart-no-cart-img">
+                                <span class="hd__cart-list-no-cart-msg">Hãy click vào giỏ hàng để xem chi tiết tất cả sản phẩm</span>
+                                <span class="hd__cart-list-no-cart-msg">Chức năng này đang trong quá trình hoàn thiện. Xin thông cảm!!</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </header>
+        <div class="container container-ctsp">
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <div class="col l-1 c-12 m-2">
+                        <div class="list-img">
+                            <div class="list-img-item">
+                                <img src="./img/ctsp1/zoro-tam-long2.png" alt="" class="img1">
+                            </div>
+                            <div class="list-img-item">
+                                <img src="./img/ctsp1/zoro-tam-long3.png" alt="" class="img2">
+                            </div>
+                            <div class="list-img-item">
+                                <img src="./img/ctsp1/zoro-tam-long4.png" alt="" class="img3">
+                            </div>
+                            <div class="list-img-item">
+                                <img src="./img/ctsp1/zoro-tam-long5.png" alt="" class="img4">
+                            </div>
+                            <div class="list-img-item">
+                                <img src="./img/ctsp1/zoro-tam-long6.png" alt="" class="img5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 c-12 m-10">
+                        <div class="main-img">
+                            <img src="./img/mô hình/zoro_tamlong.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-5 c-12 m-12">
+                        <div class="main-content-img">
+                            <div class="main-content-title">
+                                <span><a href="index.html"> trang chủ </a> / <a href="product.html">Danh sách mô hình</a></span>
+                                <h1>MÔ HÌNH ZORO ONE PIECE TAM LONG</h1>
+                            </div>
+                            <div class="main-content-price">
+                                <span>2.500.000đ</span>
+                            </div>
+                            <div class="main-content-subtit">
+                                <ul class="main-content-list">
+                                    <li class="main-content-item"><i class="main-content-icon fa-solid fa-check"></i> Hàng mới 100% fullbox</li>
+                                    <li class="main-content-item"><i class="main-content-icon fa-solid fa-check"></i> Đổi trả trong 3 ngày</li>
+                                    <li class="main-content-item"><i class="main-content-icon fa-solid fa-check"></i> Check lỗi kĩ càng trước khi gửi</li>
+                                    <li class="main-content-item"><i class="main-content-icon fa-solid fa-check"></i> Hình ảnh thật được chụp trực tiếp 100% tại shop</li>
+                                    <li class="main-content-item"><i class="main-content-icon fa-solid fa-check"></i> Nhiều ưu đãi với các gói hỗ trợ freeship</li>
+                                </ul>
+                            </div>
+                            <div class="main-content-btn">
+                                <button class="btn-main1">Thêm vào giỏ hàng</button>
+                                <button class="btn-main2">Mua ngay</button>
+                            </div>
+                            <div class="main-content-text">
+                                <span class="main-content-text-subtit">Hết hàng</span>
+                            </div>
+                            <div class="main-content-text">
+                                <span class="main-content-text-list">Danh mục:<a href="product.html">Mô hình</a>;<a href="">Mô hình One Piece</a></span>
+                            </div>
+                            <div class="main-content-text">
+                                <span class="main-content-text-key">Từ khóa:<a href="">Zoro</a>;<a href="">One Piece</a>;<a href="">Zoro tam long</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <ul class="nav-tabs">
+                        <li class="tabs-item active"><a href="#tab1">Mô tả sản phẩm</a></li>
+                        <li class="tabs-item"><a href="#tab2">Hướng dẫn mua hàng</a></li>
+                        <li class="tabs-item"><a href="#tab3">Đánh giá</a></li>
+                    </ul>
+                    <div class="tabs-content">
+                        <div class="tabs-content-item" id="tab1">
+                            <span class="title-tab">Xin chào bạn, bạn đang tìm kiếm cho mình mô hình Zoro tam long. Một mô hình chuẩn anime, giá cả hợp lý, kích thước đúng tỉ lệ và giúp hoàn thiện bộ sưu tập của bạn? Hãy tham khảo mô hình figure sau đây tại DShop nhé.</span>
+                            <h2 class="tabs-content-title-main">MÔ HÌNH ZORO ONE PIECE TAM LONG</h2>
+                            <div class="tabs-content-summary">
+                                <h2 class="tabs-content-title">Tóm lược nhân vật</h2>
+                                <div class="tabs-content_subtit">
+                                    <p>Mô hình Zoro tam long được mô phỏng theo trang phục Zoro trong phim “One Piece - Arc Đảo người cá” do tác giả Oda vẽ. Mô hình được làm theo nguyên mẫu trong anime khi Zoro đánh nhau với một trong các thuộc hạ của Hody Jones.</p>
+                                    <img src="./img/mô hình/zoro_tamlong.png" alt="">
+                                    <span class="tabs-content-detail-subtit">Mô hình Zoro tam long</span>
+                                </div>
+                                <div class="tabs-content-detail">
+                                    <h2 class="tabs-content-title">Thông tin sản phẩm</h2>
+                                    <ul class="tabs__list">
+                                        <li class="tabs__list-item">Tên sản phẩm: Zoro One Piece tam long</li>
+                                        <li class="tabs__list-item">Phân loại: Figure One Piece</li>
+                                        <li class="tabs__list-item">Nặng: 8,5 kg</li>
+                                        <li class="tabs__list-item">Size: 52 x 53 x 50 cm</li>
+                                        <li class="tabs__list-item">Chất liệu: PVC</li>
+                                        <li class="tabs__list-item">Sản xuất: China</li>
+                                        <li class="tabs__list-item">Đóng hộp: Fullbox</li>
+                                        <li class="tabs__list-item">Phụ kiện: Đầy đủ như hình Mô Tả</li>
+                                    </ul>
+                                    <h2 class="tabs-content-title">Một số hình ảnh thực tế</h2>
+                                    <img src="./img/ctsp1/zoro-tam-long2.png" alt="">
+                                    <span class="tabs-content-detail-subtit">Góc nghiêng của mô hình</span>
+                                    <img src="./img/ctsp1/zoro-tam-long3.png" alt="">
+                                    <span class="tabs-content-detail-subtit">Cận mặt con rồng 1</span>
+                                    <img src="./img/ctsp1/zoro-tam-long4.png" alt="">
+                                    <span class="tabs-content-detail-subtit">Cận mặt con rồng 2</span>
+                                    <img src="./img/ctsp1/zoro-tam-long5.png" alt="">
+                                    <span class="tabs-content-detail-subtit">Cận mặt con rồng 3</span>
+                                    <img src="./img/ctsp1/zoro-tam-long6.png" alt="">
+                                    <span class="tabs-content-detail-subtit">Cận mặt Zoro</span>
+                                    <span>Tất cả ảnh có DShop đều được chụp trực tiếp tại shop để đảm bảo độ chân thật màu sắc sơn và cho góc nhìn khách quan nhất về sản phẩm.</span>
+                                </div>
+                            </div>
+                            <div class="tabs-content-video">
+                                <h2 class="tabs-content-title">video review</h2>
+                                <div class="video-review">
+                                    <iframe width="70%" height="450px" src="https://www.youtube.com/embed/5S__BRt9mdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="tabs-content-review">
+                                <h2 class="tabs-content-title">đánh giá tổng quan</h2>
+                                <span>Ưu điểm</span>
+                                <ul class="tabs__list">
+                                    <li class="tabs__list-item"><i class="main-content-icon fa-solid fa-check"></i>Chi tiết tốt, rõ ràng ít lem</li>
+                                    <li class="tabs__list-item"><i class="main-content-icon fa-solid fa-check"></i>Chất lượng nhựa tốt</li>
+                                    <li class="tabs__list-item"><i class="main-content-icon fa-solid fa-check"></i>Màu sơn đẹp</li>
+                                </ul>
+                                <span>Nhược điểm</span>
+                                <ul class="tabs__list">
+                                    <li class="tabs__list-item"><i class="tabs-content-review-icon fa-solid fa-circle-xmark"></i>Head phụ khi thay sẽ rất chặt và khó tháo sau khi đã lắp, lưu ý xem xét kĩ trước khi thay head phụ này.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabs-content-item" id="tab2">
+                            <h2 class="tabs-content-title">thời gian đặt hàng nhanh</h2>
+                            <div class="tabs-content_subtit">
+                                <p>DShop luôn là đơn vị đi đầu khi bán ra thị trường những mẫu mô hình figure action mới sớm nhất, để các bạn có thể trải nghiệm sản phẩm hot trong thời gian ngắn. Ship rất nhanh, 1 ngày nếu bạn ở Hà Nội và từ 2-3 ngày nếu bạn ở Hồ Chí Minh, những sản phẩm order cũng chỉ mất 7-10 hôm để về tới tay bạn.</p>
+                            </div>
+                            <h2 class="tabs-content-title">lựa chọn dshop</h2>
+                            <div class="tabs-content-list">
+                                <span>Tất cả các sản phẩm tại shop sẽ được đảm bảo những yếu tố sau:</span>
+                                <ul class="tabs__list">
+                                    <li class="tabs__list-item"><i class="main-content-icon fa-solid fa-check"></i>Đủ size kích cơ tỉ lệ chuẩn, màu sắc</li>
+                                    <li class="tabs__list-item"><i class="main-content-icon fa-solid fa-check"></i>Check lỗi với các sản phẩm bootleg để tránh những lỗi nặng</li>
+                                    <li class="tabs__list-item"><i class="main-content-icon fa-solid fa-check"></i>Hình ảnh trên website đều là ảnh thật được chụp trực tiếp tại shop</li>
+                                    <li class="tabs__list-item"><i class="main-content-icon fa-solid fa-check"></i>Thông tin mình bạch công khai về phân khúc, phân loại (chính hãng, bootleg, 2nd…)</li>
+                                    <li class="tabs__list-item"><i class="main-content-icon fa-solid fa-check"></i>Giao dịch uy tín với đầy đủ phương thức (có gian hàng tại Shopee)</li>
+                                </ul>
+                            </div>
+                            <h2 class="tabs-content-title">cách đặt hàng</h2>
+                            <div class="tabs-content-list">
+                                <span>Đặt hàng qua website Dshop.vn, page <a href="https://www.facebook.com/" class="tabs-content-list-link">Facebook</a> hoặc <a href="https://shopee.vn/" class="tabs-content-list-link">Shopee</a> của shop để được freeship (tối đa 40k) nhé ^^</span>
+                                <span class="tabs_content-list-sub">Lưu ý: (Đọc thêm <a href="" class="tabs-content-list-link">"Kiến thức cơ bản về figure"</a> trước khi sưu tầm):</span>
+                                <ul class="tabs__list">
+                                    <li class="tabs__list-item"><i class="tabs-list_icon fa-regular fa-circle-check"></i>Thay phụ kiện Cẩn Thận.</li>
+                                    <li class="tabs__list-item"><i class="tabs-list_icon fa-regular fa-circle-check"></i>Với các khớp bị cứng/chặt, ngâm nước nóng hoặc dùng máy sấy sấy qua khớp trước khi thay. Không cố bẻ khớp vì như vậy có thể làm gẫy sản phẩm.</li>
+                                    <li class="tabs__list-item"><i class="tabs-list_icon fa-regular fa-circle-check"></i>Với các khớp bị lỏng, tháo khớp ra, bôi một lớp sơn móng tay vào đầu khớp, chờ khô rồi lắp lại (xem thêm video hướng dẫn tại đây)</li>
+                                    <li class="tabs__list-item"><i class="tabs-list_icon fa-regular fa-circle-check"></i>Xoay đúng chiều của khớp, nếu xoay sai sẽ làm gẫy khớp.</li>
+                                    <li class="tabs__list-item"><i class="tabs-list_icon fa-regular fa-circle-check"></i>Với các trường hợp sản phẩm bị hỏng, gẫy do không làm theo hướng dẫn, Hunters sẽ không chịu trách nhiệm.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabs-content-item" id="tab3">
+                            <h2 class="tabs-content-title">đánh giá</h2>
+                            <span class="title-tab">Chưa có đánh giá</span>
+                            <div class="tabs-content-form">
+                                <input type="text" placeholder="Hãy nhập vào đây...." class="tabs-content-form-index">
+                                <button class="btn btn--primary help">Đăng bình luận</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="related-products">Sản phẩm liên quan</h2>
+                <div class="slider-product">
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/ace.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/ace2.png" alt="" class="home-product-item__img">
+
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Figure One Piece Ace Resin</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">2.000.000đ</span>
+                                <span class="home-product-item__price-curent">1.300.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">Japan</span>
+                            </div>
+                            <div class="home-product-item__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Yêu thích</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">5%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/mô hình/kaido.png" alt="" class="home-product-item__img">
+                                <img src="./img/mô hình/kaido2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">MÔ HÌNH TỨ HOÀNG KAIDO BÁCH THÚ</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">1.000.000đ</span>
+                                <span class="home-product-item__price-curent">900.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">Japan</span>
+                            </div>
+                            <div class="home-product-item__favourite sold-out">
+                                <span>Hết hàng</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/luffy-chinese.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/luffy-chinese2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Figure MONKEY D. LUFFY – ONE PIECE CHINESE ATTIRE</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-curent">450.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">America</span>
+                            </div>
+                            <div class="home-product-item__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Yêu thích</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">5%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/shank.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/shank2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Tứ hoàng Yonko Shank Tóc đỏ Resin One Piece</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">5.000.000đ</span>
+                                <span class="home-product-item__price-curent">3.950.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece/span>
+                                <span class="home-product-item__origin-name">Japan</span>
+                            </div>
+                            <div class="home-product-item__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Yêu thích</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">35%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/kaido-dragon.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/kaido-dragon2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Figure Tứ hoàng Kaido Dragon Resin</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">900.000đ</span>
+                                <span class="home-product-item__price-curent">700.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">China</span>
+                            </div>
+                            <div class="home-product-item__favourite sold-out">
+                                <span>Hết hàng</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">20%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/enel.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/enel2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Figure One Piece Enel Resin</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">4.000.000đ</span>
+                                <span class="home-product-item__price-curent">3.000.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">Japan</span>
+                            </div>
+                            <div class="home-product-item__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Yêu thích</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">30%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/usopp.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/usopp2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Figure One Piece Usopp Resin</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">500.000đ</span>
+                                <span class="home-product-item__price-curent">400.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">China</span>
+                            </div>
+                            <div class="home-product-item__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Yêu thích</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/luffyxkaido.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/luffyxkaido2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Figure One Piece Luffy x Rồng Dragon Kaido</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">5.000.000đ</span>
+                                <span class="home-product-item__price-curent">3.000.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">China</span>
+                            </div>
+                            <div class="home-product-item__favourite sold-out">
+                                <span>Hết hàng</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">30%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/zoro.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/zoro2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Figure One Piece Zoro Resin </h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">1.000.000đ</span>
+                                <span class="home-product-item__price-curent">9.00.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">Japan</span>
+                            </div>
+                            <div class="home-product-item__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Yêu thích</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">10%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/katakuri.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/katakuri2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Figure Onepiece Collectable Charlotte Katakuri Resin LK-studio</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">4.000.000đ</span>
+                                <span class="home-product-item__price-curent">3.000.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">Japan</span>
+                            </div>
+                            <div class="home-product-item__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Yêu thích</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">45%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/boa.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/boa2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Figure Boa Hancock Sakura Kimono One Piece 1/4 Scale Resin Statue</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">2.000.000đ</span>
+                                <span class="home-product-item__price-curent">1.000.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">China</span>
+                            </div>
+                            <div class="home-product-item__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Yêu thích</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">50%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slider-product-item">
+                        <a class="home-product-item" href="#">
+                            <div class="change_img">
+                                <img src="./img/ctsp1/carrot.png" alt="" class="home-product-item__img">
+                                <img src="./img/ctsp1/carrot2.png" alt="" class="home-product-item__img">
+                            </div>
+                            <h4 class="home-product-item__name">Mô hình Rubik Cube Studio – Carrot Sulong Resin One Piece</h4>
+                            <div class="home-product-item__price">
+                                <span class="home-product-item__price-old">7.000.000đ</span>
+                                <span class="home-product-item__price-curent">3.000.000đ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">Phân loại</span>
+                                <span class="home-product-item__origin-name">Xuất sứ</span>
+                            </div>
+                            <div class="home-product-item__origin">
+                                <span class="home-product-item__brand">One Piece</span>
+                                <span class="home-product-item__origin-name">China</span>
+                            </div>
+                            <div class="home-product-item__favourite">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Yêu thích</span> 
+                            </div>
+                            <div class="home-product-item__sale-off">
+                                <span class="home-product-item__sale-off-percent">55%</span>
+                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-12 center">
+                        <h3 class="footer__heading">Liên hệ</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-items">Số điện thoại:0355551111</li>
+                            <li class="footer-list-items">Địa chỉ: Như Quỳnh - Văn Lâm - Hưng Yên</li>
+                            <li class="footer-list-items">Giờ làm việc: 8h - 22h</li>
+                            <li class="footer-list-items">Email: dat*****@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 center">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <span class="footer-label">Đây là cửa hàng demo bán mô hình của Dshop</span>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 center">
+                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer-list">
+                            <li><a href="https://www.facebook.com/profile.php?id=100008489491989" class="footer-list-link"><i class="footer-icon fa-brands fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://www.instagram.com/datnguyen10702/" class="footer-list-link"><i class="footer-icon fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li id="footer-list-item"><a href="https://discord.com/" class="footer-list-link"><i class="footer-icon fa-brands fa-discord"></i> Discord</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 center">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-items"><a href="#">Trung tâm trợ giúp khách hàng</a> </li>
+                            <li class="footer-list-items"><a href="#">Hướng dẫn mua hàng</a> </li>
+                            <li class="footer-list-items"><a href="#">Hỏi & Trả lời</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-12 center">
+                        <h3 class="footer__heading">Giao hàng qua các đơn vị vận chuyển sau</h3>
+                        <div class="footer__transport">
+                            <a href="" class="footer__transport-link"><img src="./img/app/giaohangnhanh.png" alt="Logo Giao Hàng Nhanh" class="footer__transport-img"></a>
+                            <a href="" class="footer__transport-link"><img src="./img/app/vietnam-post.png" alt="Logo Vietnam Post" class="footer__transport-img"></a>
+                            <a href="" class="footer__transport-link"><img src="./img/app/giao-hang-tiet-kiem.png" alt="Logo Giao Hàng Tiết Kiệm" class="footer__transport-img"></a>
+                            <a href="" class="footer__transport-link"><img src="./img/app/viettel-post.png" alt="Logo Viettel Post" class="footer__transport-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__bottom">
+            <div class="grid wide">
+                <p class="footer__text">© - 2022 Bản quyển thuộc về Nguyễn Tiến Đạt</p>
+            </div>
+        </div>
+        <div class="modal-register">
+            <!-- tạo lớp phủ màu đen bằng modal__overplay -->
+            <div class="modal__overplay"></div>
+            <div class="modal__body">
+            <!-- authen form đky --> 
+                <div class="auth-form ">
+                    <div class="auth-form__container">
+                        <!-- title authen form -->
+                        <div class="auth-form__hd">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn" id="switch-dn">Đăng nhập</span>
+                        </div>
+                        <!-- input authen form -->
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập họ tên của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="tel" class="auth-form__input" maxlength="10" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="Nhập số điện thoại của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Xác nhận mật khẩu">
+                            </div>
+                        </div>
+                        <!-- thêm 1 phần bất kì vào form -->
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý với tất cả các điều khoản của Dshop
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> & 
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- tạo btt cho authen form -->
+                    <div class="auth-form__control">
+                        <button class="btn auth-form__control-back btn--normal back-btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--with-icon btn-size-s auth-form__socials-fb">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__socials-title help">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="btn btn--with-icon btn-size-s auth-form__socials-gg">                            
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title help">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="modal-login">
+            <!-- tạo lớp phủ màu đen bằng modal__overplay -->
+            <div class="modal__overplay"></div>
+            <div class="modal__body">
+            <!-- authen form đnhap -->
+                <!-- authen form -->
+                <div class="auth-form"> 
+                    <div class="auth-form__container">
+                        <!-- title authen form -->
+                         <div class="auth-form__hd"> 
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn" id="switch-dk">Đăng ký</span>
+                        </div>
+                        <!-- input authen form -->
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <!-- thêm 1 phần bất kì vào form -->
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-link-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Trợ giúp ?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tạo btt cho authen form -->
+                     <div class="auth-form__control">
+                        <button class="btn auth-form__control-back btn--normal back-btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary btn-login">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--with-icon btn-size-s auth-form__socials-fb">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__socials-title help">Đăng nhập với Facebook</span>
+                        </a>
+                        <a href="" class="btn btn--with-icon btn-size-s auth-form__socials-gg">                            
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title help">Đăng nhập với Google</span>
+                        </a>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        <div class="backtop">
+            <i class="backtop-icon fa-solid fa-angle-up"></i>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider-product').slick({
+            infinite: false,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            cssEase: 'linear',
+            speed: 1000,
+            prevArrow:"<button type='button' class='slick-prev pull-left product-arrow'><i class='fa-solid fa-angle-left'></i></button>",
+            nextArrow:"<button type='button' class='slick-next pull-right product-arrow'><i class='fa-solid fa-angle-right'></i></button>",
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    arrows:false,
+                }
+                },
+                {
+                breakpoint: 720,
+                settings: {
+                    arrows:false,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+                }
+            ]
+        });
+        // hàm hiển thị đăng nhập
+        $('.login').click(function(){
+            $('.modal-login').css('display','flex');
+            return false;
+        });
+        // hàm chuyển đổi form đăng nhập sang đăng ký
+        $('#switch-dk').click(function(){
+            $('.modal-login').css('display','none');
+            $('.modal-register').css('display','flex');
+        });
+        // đóng hàm đăng nhập
+        $('.back-btn').click(function(){
+            $('.modal-login').css('display','none');
+        });
+        // hảm hiển thị đăng ký
+        $('.register').click(function(){
+            $('.modal-register').css('display','flex');
+            return false;
+        });
+        // hàm chuyển đổi form đăng ký sang đăng đăng nhập
+            $('#switch-dn').click(function(){
+                $('.modal-register').css('display','none');
+                $('.modal-login').css('display','flex');
+        });
+        // đóng hàm đăng ký
+        $('.back-btn').click(function(){
+            $('.modal-register').css('display','none');
+        });
+        // hàm hiển thị thông báo
+        $('.help').click(function(){
+            alert('Chức năng đang trong quá trình thực hiện, hãy thử lại sau!!!');
+            return false;
+        });
+        // hàm về đầu trang
+        $(window).scroll(function(){
+            if($(this).scrollTop()){
+                $('.backtop').fadeIn();
+            }
+            else{
+                $('.backtop').fadeOut();
+            }
+        });
+        $('.backtop').click(function(){
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        // hàm ẩn tab_content
+        $('.tabs-content-item').hide();
+        // hàm hiển thị tab_content đầu tiên
+        $('.tabs-content-item:first-child').fadeIn();
+        // hàm chuyển class active 
+        $('.tabs-item').click(function(){
+            // active nav tabs
+            $('.tabs-item').removeClass('active');
+            $(this).addClass('active');
+            // show tabs content item
+            let id_tab_content =  $(this).children('a').attr('href');
+            $('.tabs-content-item').hide();
+            $(id_tab_content).fadeIn();
+            return false;
+        });
+        // hàm chuyển ảnh khi click vào ảnh khác
+        $('.list-img-item img').click(function(){
+            if($(this).hasClass('img1')){
+                $(".main-img img").attr("src","./img/ctsp1/zoro-tam-long2.png")
+            }
+            else if($(this).hasClass('img2')){
+                $(".main-img img").attr("src","./img/ctsp1/zoro-tam-long3.png")
+            }
+            else if($(this).hasClass('img3')){
+                $(".main-img img").attr("src","./img/ctsp1/zoro-tam-long4.png")
+            }
+            else if($(this).hasClass('img4')){
+                $(".main-img img").attr("src","./img/ctsp1/zoro-tam-long5.png")
+            }
+            else{
+                $(".main-img img").attr("src","./img/ctsp1/zoro-tam-long6.png")
+            }
+        });
+        $('.btn-login').click(function(){
+            $('.modal-login').css('display','none');
+            $('.login,.register').addClass('hidden__user')
+            $('.hd__navbar-user').addClass('active__user')
+        });
+    });
+</script>
+</html>

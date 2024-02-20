@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./grid-system.css">
+    <link rel="stylesheet" href="./reponsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-32x32.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest"></link>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <!-- navbar -->
+                <nav class="hd__navbar hide-on-mobile-table">
+                    <ul class="hd__navbar-list">
+                        <li class="hd__navbar-item  separate hidden-qr" style="cursor: pointer;">
+                            Mô hình Anime - Manga - Movie
+                        </li>
+                        <li class="hd__navbar-item">
+                            Kết nối 
+                            <a href="https://facebook.com" class="hd__navbar-icon"><i class=" fa-brands fa-facebook"></i></a> 
+                            <a href="https://instagram.com" class="hd__navbar-icon"><i class=" fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="hd__navbar-list">
+                        <li class="hd__navbar-item notify">
+                            <a href="" class="hd__navbar-link">
+                                <i class="hd__navbar-icon fa-regular fa-bell"></i>
+                                Thông báo                                
+                            </a>
+                            <!-- tạo phần thông báo ẩn đi -->
+                            <div class="hd__notify">
+                                <header class="hd__notify-title">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="hd__notify-list">
+                                    <li class="hd__notify-item">
+                                        <a href="#" class="hd__notify-link viewed">
+                                            <img src="./img/mô hình/luffy.png" alt="" class="hd__notify-img">
+                                            <div class="hd__notify-info">
+                                                <span class="hd__notify-name">Mô hình Lufffy chính hãng</span>
+                                                <span class="hd__notify-descriotion">Mô hình Luffy cao 40cm của hãng Konami</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hd__notify-item">
+                                        <a href="#" class="hd__notify-link">
+                                            <img src="./img/mô hình/batman.png" alt="" class="hd__notify-img">
+                                            <div class="hd__notify-info">
+                                                <span class="hd__notify-name">Mô hình Batman chính hãng</span>
+                                                <span class="hd__notify-descriotion">Mô hình Batman cao 180cm của nhà DC</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hd__notify-item">
+                                        <a href="#" class="hd__notify-link viewed">
+                                            <img src="./img/mô hình/naruto.png" alt="" class="hd__notify-img">
+                                            <div class="hd__notify-info">
+                                                <span class="hd__notify-name">Mô hình Naruto</span>
+                                                <span class="hd__notify-descriotion">Mô hình Naruto cao 120cm của hãng Konami</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class=" hd__notify-footer">
+                                    <a href="" class="hd__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="hd__navbar-item">
+                            <a href="" class="hd__navbar-link help">
+                                <i class="hd__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp                              
+                            </a>                            
+                        </li>
+                        <li class="hd__navbar-item  bold separate opacity">
+                            <button class="hd__navbar-link login" >Đăng nhập</button>
+                        </li>
+                        <li class="hd__navbar-item  bold opacity">
+                            <button class="hd__navbar-link register" >Đăng ký</button>
+                        </li>
+                        <li class="hd__navbar-item hd__navbar-user" >
+                            <img src="./img/mô hình/luffy.png" alt="" class="hd__navbar-user-img">
+                            <span class="hd__navbar-user-name">Nguyễn Đạt</span>
+                            <ul class="hd__navbar-user-menu">
+                                <li class="hd__navbar-user-item">
+                                    <a href="admin.html">Tài khoản của tôi</a>
+                                </li>
+                                <li class="hd__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="hd__navbar-user-item hd__navbar-user-item-separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- searrch -->
+                <div class="hd-with-search">
+                    <input type="checkbox" hidden id="mobile-menu-checkbox" class="nav__input">
+                    <label for="mobile-menu-checkbox" class="hd__mobile-menu show-on-mobile">
+                        <i class="hd__menu fa-solid fa-list-ul"></i>
+                    </label>
+                        <label for="mobile-menu-checkbox" class="nav--overplay"></label>
+                        <nav class="nav__mobile">
+                            <label for="mobile-menu-checkbox" class="nav__mobile-btn-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label>
+                            <ul class="nav__mobile-list">
+                                <li><a href="index.html" class="nav__mobile-link">Trang chủ</a></li>
+                                <li><a href="" class="nav__mobile-link login">Đăng nhập</a></li>
+                                <li><a href="" class="nav__mobile-link register">Đăng ký</a></li>
+                                <li><a href="" class="nav__mobile-link help">Trợ giúp</a></li>
+                                <li><a href="product.html" class="nav__mobile-link">Sản phẩm</a></li>
+                                <li><a href="blog.html" class="nav__mobile-link">Blog</a></li>
+                                <li><a href="" class="nav__mobile-link help">Chính sách</a></li>
+                            </ul>
+                        </nav>                 
+                    <div class="hd__logo hide-on-mobile">
+                        <a href="index.html" class="hd__logo-link">
+                            <img src="./img/app/logo-DShop.png" alt="" class="logo">
+                        </a>                          
+                    </div>
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="hd__search-checkbox">
+                    <div class="hd__search">
+                        <!-- search history -->
+                        <div class="hd__seach-input-warp">
+                            <input type="text" class="hd__seach-input" placeholder="Nhập vào từ khóa để bắt đầu tìm kiếm sản phẩm.........">
+                        </div>
+                        <button class="hd__search-btn">
+                            <i class="hd__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="hd__cart">
+                        <a href="cart.html" class="hd__cart-wrap">
+                            <i class="hd__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="hd__cart-notice">0</span>
+                            <!-- class khi ko có sản phẩm: hd__cart-list-no-cart -->
+                            <!-- class khi có sản phẩm: hd__cart-list-have-cart-->
+                            <div class="hd__cart-list hd__cart-list-no-cart">
+                                <img src="./img/app/no_cart.png" alt="" class="hd__cart-no-cart-img">
+                                <span class="hd__cart-list-no-cart-msg">Hãy click vào giỏ hàng để xem chi tiết tất cả sản phẩm</span>
+                                <span class="hd__cart-list-no-cart-msg">Chức năng này đang trong quá trình hoàn thiện. Xin thông cảm!!</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </header>
+        <div class="container container-ctsp">
+            <div class="blog__img">
+                <img src="./img/blog/slide.png" alt="">
+            </div>
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <div class="col l-4 c-0 m-0">
+                        <div class="new-content-blog">
+                            <h2 class="title-new-blog">bài viết mới nhất</h2>
+                            <div class="content-blog-left">
+                                <div class="content-blog-left_img">
+                                    <a href=""><img src="./img/blog/overlord.png" alt=""></a>
+                                    <a href="" class="content-blog-left-title">OVERLORD "GÂY BÃO" VỚI 2 DỰ ÁN LỚN: SEASON 4 VÀ MOVIE!?</a>
+                                    <span class="content-blog-left-author">DShop <b>15/5/2022</b></span>
+                                </div>
+                            </div>           
+                            <div class="content-blog-left">
+                                <div class="content-blog-left_img">
+                                    <a href=""><img src="./img/blog/dr.strone.png" alt=""></a>
+                                    <a href="" class="content-blog-left-title">TOP 10 ANIME NHẤT ĐỊNH PHẢI XEM TRONG MÙA ĐÔNG 2021! - SIÊU PHẨM + SIÊU PHẨM</a>
+                                    <span class="content-blog-left-author">DShop <b>17/3/2022</b></span>
+                                </div>
+                            </div>  
+                            <div class="content-blog-left">
+                                <div class="content-blog-left_img">
+                                    <a href=""><img src="./img/blog/your_name.png" alt=""></a>
+                                    <a href="" class="content-blog-left-title">TOP 10 NHỮNG BỘ ANIME MOVIE TÌNH CẢM MÀ BẠN NÊN XEM TRƯỚC TUỔI 20</a>
+                                    <span class="content-blog-left-author">DShop <b>17/3/2022</b></span>
+                                </div>
+                            </div>  
+                            <div class="content-blog-left">
+                                <div class="content-blog-left_img">
+                                    <a href=""><img src="./img/blog/eren.png" alt=""></a>
+                                    <a href="" class="content-blog-left-title">TẬP 14 CỦA ATTACK ON TITAN THE FINAL SEASON BỊ HOÃN CHIẾU DO ĐỘNG ĐẤT Ở TỈNH WAKAYAMA</a>
+                                    <span class="content-blog-left-author">DShop <b>15/5/2022</b></span>
+                                </div>
+                            </div>  
+                            <div class="content-blog-left">
+                                <div class="content-blog-left_img">
+                                    <a href=""><img src="./img/blog/hang-hóa.png" alt=""></a>
+                                    <a href="" class="content-blog-left-title">Hàng Order, Pre-Order là gì?</a>
+                                    <span class="content-blog-left-author">DShop <b>15/5/2022</b></span>
+                                </div>
+                            </div> 
+                            <div class="content-blog-left">
+                                <div class="content-blog-left_img">
+                                    <a href=""><img src="./img/blog/deadpool.png" alt=""></a>
+                                    <a href="" class="content-blog-left-title">Figure là gì? Những kiến thức cơ bản về figure</a>
+                                    <span class="content-blog-left-author">DShop <b>15/5/2022</b></span>
+                                </div>
+                            </div> 
+                            <div class="content-blog-left">
+                                <div class="content-blog-left_img">
+                                    <a href=""><img src="./img/blog/goku.png" alt=""></a>
+                                    <a href="" class="content-blog-left-title">
+                                        5 cách thể hiện niềm đam mê Dragon Ball "hao tiền tốn của" nhất</a>
+                                    <span class="content-blog-left-author">DShop <b>15/5/2022</b></span>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="new-content-blog blog2">
+                            <h2 class="title-new-blog title-blog2">Danh mục blog</h2>
+                            <div class="blog-directory-item">
+                                <h1><a href="" class="blog-directory-link">Giới thiệu</a></h1>
+                            </div>
+                            <div class="blog-directory-item">
+                                <h1><a href="" class="blog-directory-link">Chính sách đổi trả</a></h1>
+                            </div>
+                            <div class="blog-directory-item">
+                                <h1><a href="" class="blog-directory-link">Chính sách bảo mật</a></h1>
+                            </div>
+                            <div class="blog-directory-item">
+                                <h1><a href="" class="blog-directory-link">Điều khoản dịch vụ</a></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-8 c-12 m-12">
+                        <div class="blog-detail-content">
+                            <div class="blog-slide_main">
+                                <img src="./img/blog/deadpool.png" alt="">
+                            </div>
+                            <h2 class="blog-detail-title">
+                                Figure là gì? Những kiến thức cơ bản về figure
+                            </h2>
+                            <span class="blog-detail-author">Người viết: nhat240601@gmail.com lúc 15/05/2022</span>
+                            <span class="blog-detail-author"><i class="blog-detail-icon fa-solid fa-file-lines"></i> <a href="blog.html">Tin tức - DShop</a></span>
+                            <span class="blog-detail-author"><i class="blog-detail-icon fa-solid fa-comment"></i><a href="#comment">0 Bình luận</a></span>
+                            <p class="blog-text">Nếu bạn là một người chơi figure lâu năm, bạn sẽ không lạ gì với cụm từ figure nữa. Tuy nhiên, ở Việt Nam, thú chơi figure vẫn còn khá mới mẻ và nhiều người vẫn còn hiểu sai về nó. Vậy nên hôm nay Hunters cùng mọi người sẽ điểm qua những điều cơ bản của figure nhé ^^</p>
+                            <h3 class="blog-detail-title-main">1. <b>Figure là gì?</b></h3>
+                            <p class="blog-text">Ra đời vào những năm 1964, đến nay mặc dù đã trải qua hơn 50 phát triển, thế nhưng tại Việt Nam, figure vẫn còn khá lạ lẫm. Đối với nhiều người, figure chỉ như một món đồ chơi dành cho trẻ con. Tuy nhiên, đằng sau những con búp bê đắt tiền nhưng vô bổ mà mọi người vẫn thường nghĩ ấy là cả một nghệ thuật, một nền văn hóa và là thú vui sưu tầm đáng được coi trọng.</p>
+                            <div class="blog-content__img">
+                                <img src="./img/blog/figure1.png" alt="">
+                                <p>Thú chơi figure từ những năm 80s của thế kỷ trước</p>
+                            </div>
+                            <div class="blog-content__img on-table__img">
+                                <img src="./img/blog/figure2.png" alt="">
+                                <p>Các mô hình và phụ kiện đi kèm</p>
+                            </div>
+                            <p class="blog-text">Theo từ điển tiếng Anh, figure có nghĩa là nhân vật tượng trưng, hình minh họa… Bắt nguồn từ Mỹ nhưng phát triển nhờ văn hóa Otaku của Nhật Bản, ban đầu figure chỉ là những mô hình mô phỏng lại các nhân vật trong truyện tranh, manga và anime. Đến nay, bạn có thể tìm kiếm bất kỳ figure của nhân vật trong phim ảnh, thậm chí ngoài đời.</p>
+                            <h3 class="blog-detail-title-main">2. <b>Tại sao figure lại có nhiều người đam mê đến vậy?</b></h3>
+                            <p class="blog-text">Hầu hết các figure collectors đều là fan cứng của nhân vật trong truyên tranh/phim ảnh. Việc ngắm họ qua những trang giấy hay qua màn hình tivi tất nhiên sẽ không thú vị bằng việc có mô hình giống y nhân vật yêu thích của mình bên cạnh đúng không? Với figure, họ có thể tha hồ tạo dáng, chụp ảnh, hay xây dựng nên câu chuyện từ những mô hình ấy.</p>
+                            <div class="blog-content__img blog-slide_main">
+                                <img src="./img/blog/figure3.png" alt="">
+                                <p>Một câu chuyện hài hước dựa trên figure của loạt phim Marvel nổi tiếng (Avengergram)</p>
+                            </div>
+                            <p class="blog-text">Figure được làm bằng sự tỉ mỉ và óc sáng tạo vô biên của người thợ, với các bộ phận và chi tiết đạt đến tiêu chuẩn y như người thật trong phim hay nhân vật trong truyện tranh. Chính bởi vậy, figure có giá thành cao hơn hẳn các đồ chơi  bình thường và thường dành cho người trên 12 tuổi.</p>
+                            <div class="blog-content__img">
+                                <img src="./img/blog/figure4.png" alt="">
+                                <p>Mô hình nhân vật nổi tiếng DC Joker của hãng Hot Toys</p>
+                            </div>
+                            <p class="blog-text">Mặc dù vậy, nhiều người vẫn đánh đồng figure với đồ chơi dành cho trẻ em. Có thể bởi hầu hết figure collectors đều là người trẻ, và họ sưu tầm một thứ giống như đồ chơi của trẻ con. Vậy nên họ thường không nhận được ánh mắt coi trọng của người đối diện. Nhưng cũng giống như thú vui sưu tầm tem, xe, cây cảnh…thì sưu tầm figure cũng vậy. Họ sưu tầm vì đam mê của bản thân, tạo nên một cộng đồng, một nền văn hóa không phân biệt lứa tuổi. Chính vì vậy, hơn ai hết, figure collectors là những người đáng được nhìn nhận và coi trọng.</p>
+                            <div class="blog-content__img on-table__img">
+                                <img src="./img/blog/figure5.png" alt="">
+                                <p>Các figures được làm theo các nhân vật anime/manga Nhật Bản</p>
+                            </div>
+                            <h3 class="blog-detail-title-main">3. <b>Phân loại figure</b></h3>
+                            <p class="blog-text">Hiện nay, có rất nhiều cách để phân loại figure. Tuy nhiên, Hunters chỉ phân thành 3 loại cơ bản là Action Figure (Figure động – có thể điều chỉnh, cử động tạo dáng), Scale Figure (Figure tĩnh – không thể điều chỉnh, chỉ để trưng bày) và loại chibi (đầu to, thân nhỏ, phong cách dễ thương).</p>
+                            <div class="blog-content__img on-table__img">
+                                <img src="./img/blog/figure6.png" alt="">
+                                <p>Figure chibi của nhân vật DC nổi tiếng: Harley Quinn</p>
+                            </div>
+                            <p class="blog-text">Như vậy, Figure Store đã tổng hợp vài kiến thức cơ bản về figure. Hy vọng sau bài viết này, các bạn sẽ hiểu hơn về figure và thú chơi figure. Bài viết có tham khảo từ các nguồn thông tin và ảnh trên mạng nên vẫn còn nhiều thiếu sót. Xin hãy góp ý và bình luận phía dưới bài viết để chúng mình sửa đổi và cập nhật nhé!</p>
+                            <a class="blog-link" href="index.html" target="_blank">Ngoài ra các bạn có thể mua mô hình tại đây.</a>
+                            <div class="blog-comment">
+                                <div class="blog-comment__title">
+                                    <h2 class="title-new-blog title-blog3">viết bình luận</h2>
+                                    <input type="text" placeholder="Viết bình luận của bạn..." class="tabs-content-form-index margin-top">
+                                    <button class="btn btn--primary help">Đăng bình luận</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index-product-title" style="margin-bottom: 50px;margin-top: 30px;">
+                <a href="">Ảnh feedback từ khách</a>
+            </div>
+            <div class="feedback-img">
+                <div class="row sm-gutter">
+                    <div class="col l-2 c-4 m-2 feedback-img">
+                        <div class="feedback-img-item">
+                            <img src="./img/slide & QC/feedback1.png" alt="">
+                            <div class="feedback-img-icon">
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-heart"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-comment"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 c-4 m-2 feedback-img">
+                        <div class="feedback-img-item">
+                            <img src="./img/slide & QC/feedback2.png" alt="">
+                            <div class="feedback-img-icon">
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-heart"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-comment"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 c-4 m-2 feedback-img">
+                        <div class="feedback-img-item on-mobile">
+                            <img src="./img/slide & QC/feedback3.png" alt="">
+                            <div class="feedback-img-icon">
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-heart"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-comment"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 c-4 m-2 feedback-img">
+                        <div class="feedback-img-item">
+                            <img src="./img/slide & QC/feedback4.png" alt="">
+                            <div class="feedback-img-icon">
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-heart"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-comment"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 c-4 m-2 feedback-img">
+                        <div class="feedback-img-item">
+                            <img src="./img/slide & QC/feedback5.png" alt="">
+                            <div class="feedback-img-icon">
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-heart"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-comment"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2 c-4 m-2 feedback-img">
+                        <div class="feedback-img-item" style="margin-right: 5px;">
+                            <img src="./img/slide & QC/feedback6.png" alt="">
+                                                        <div class="feedback-img-icon">
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-heart"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-comment"></i></a>
+                                <a href=""><i class="feedback-img-icon_item fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-12 center">
+                        <h3 class="footer__heading">Liên hệ</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-items">Số điện thoại:0355551111</li>
+                            <li class="footer-list-items">Địa chỉ: Như Quỳnh - Văn Lâm - Hưng Yên</li>
+                            <li class="footer-list-items">Giờ làm việc: 8h - 22h</li>
+                            <li class="footer-list-items">Email: dat*****@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 center">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <span class="footer-label">Đây là cửa hàng demo bán mô hình của Dshop</span>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 center">
+                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer-list">
+                            <li><a href="https://www.facebook.com/profile.php?id=100008489491989" class="footer-list-link"><i class="footer-icon fa-brands fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://www.instagram.com/datnguyen10702/" class="footer-list-link"><i class="footer-icon fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li id="footer-list-item"><a href="https://discord.com/" class="footer-list-link"><i class="footer-icon fa-brands fa-discord"></i> Discord</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12 center">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-items"><a href="#">Trung tâm trợ giúp khách hàng</a> </li>
+                            <li class="footer-list-items"><a href="#">Hướng dẫn mua hàng</a> </li>
+                            <li class="footer-list-items"><a href="#">Hỏi & Trả lời</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-12 center">
+                        <h3 class="footer__heading">Giao hàng qua các đơn vị vận chuyển sau</h3>
+                        <div class="footer__transport">
+                            <a href="" class="footer__transport-link"><img src="./img/app/giaohangnhanh.png" alt="Logo Giao Hàng Nhanh" class="footer__transport-img"></a>
+                            <a href="" class="footer__transport-link"><img src="./img/app/vietnam-post.png" alt="Logo Vietnam Post" class="footer__transport-img"></a>
+                            <a href="" class="footer__transport-link"><img src="./img/app/giao-hang-tiet-kiem.png" alt="Logo Giao Hàng Tiết Kiệm" class="footer__transport-img"></a>
+                            <a href="" class="footer__transport-link"><img src="./img/app/viettel-post.png" alt="Logo Viettel Post" class="footer__transport-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__bottom">
+            <div class="grid wide">
+                <p class="footer__text">© - 2022 Bản quyển thuộc về Nguyễn Tiến Đạt</p>
+            </div>
+        </div>
+        <div class="modal-register">
+            <!-- tạo lớp phủ màu đen bằng modal__overplay -->
+            <div class="modal__overplay"></div>
+            <div class="modal__body">
+            <!-- authen form đky --> 
+                <div class="auth-form ">
+                    <div class="auth-form__container">
+                        <!-- title authen form -->
+                        <div class="auth-form__hd">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn" id="switch-dn">Đăng nhập</span>
+                        </div>
+                        <!-- input authen form -->
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập họ tên của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="tel" class="auth-form__input" maxlength="10" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="Nhập số điện thoại của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Xác nhận mật khẩu">
+                            </div>
+                        </div>
+                        <!-- thêm 1 phần bất kì vào form -->
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý với tất cả các điều khoản của Dshop
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> & 
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- tạo btt cho authen form -->
+                    <div class="auth-form__control">
+                        <button class="btn auth-form__control-back btn--normal back-btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--with-icon btn-size-s auth-form__socials-fb">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__socials-title help">Kết nối với Facebook</span>
+                        </a>
+                        <a href="" class="btn btn--with-icon btn-size-s auth-form__socials-gg">                            
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title help">Kết nối với Google</span>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="modal-login">
+            <!-- tạo lớp phủ màu đen bằng modal__overplay -->
+            <div class="modal__overplay"></div>
+            <div class="modal__body">
+            <!-- authen form đnhap -->
+                <!-- authen form -->
+                <div class="auth-form"> 
+                    <div class="auth-form__container">
+                        <!-- title authen form -->
+                         <div class="auth-form__hd"> 
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn" id="switch-dk">Đăng ký</span>
+                        </div>
+                        <!-- input authen form -->
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <!-- thêm 1 phần bất kì vào form -->
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-link-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Trợ giúp ?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tạo btt cho authen form -->
+                     <div class="auth-form__control">
+                        <button class="btn auth-form__control-back btn--normal back-btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary btn-login">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--with-icon btn-size-s auth-form__socials-fb">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__socials-title help">Đăng nhập với Facebook</span>
+                        </a>
+                        <a href="" class="btn btn--with-icon btn-size-s auth-form__socials-gg">                            
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title help">Đăng nhập với Google</span>
+                        </a>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        <div class="backtop">
+            <i class="backtop-icon fa-solid fa-angle-up"></i>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // hàm hiển thị đăng nhập
+        $('.login').click(function(){
+            $('.modal-login').css('display','flex');
+            return false;
+        });
+        // hàm chuyển đổi form đăng nhập sang đăng ký
+        $('#switch-dk').click(function(){
+            $('.modal-login').css('display','none');
+            $('.modal-register').css('display','flex');
+        });
+        // đóng hàm đăng nhập
+        $('.back-btn').click(function(){
+            $('.modal-login').css('display','none');
+        });
+        // hảm hiển thị đăng ký
+        $('.register').click(function(){
+            $('.modal-register').css('display','flex');
+            return false;
+        });
+        // hàm chuyển đổi form đăng ký sang đăng đăng nhập
+            $('#switch-dn').click(function(){
+                $('.modal-register').css('display','none');
+                $('.modal-login').css('display','flex');
+        });
+        // đóng hàm đăng ký
+        $('.back-btn').click(function(){
+            $('.modal-register').css('display','none');
+        });
+        // hàm hiển thị thông báo
+        $('.help').click(function(){
+            alert('Chức năng đang trong quá trình thực hiện, hãy thử lại sau!!!');
+            return false;
+        });
+        // hàm về đầu trang
+        $(window).scroll(function(){
+            if($(this).scrollTop()){
+                $('.backtop').fadeIn();
+            }
+            else{
+                $('.backtop').fadeOut();
+            }
+        });
+        $('.backtop').click(function(){
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        // hàm ấn tim
+        $('.feedback-img-icon_item').click(function(){
+            if($(this).hasClass('feedback-img-icon-like')){
+                $(this).removeClass('feedback-img-icon-like')
+                return false;
+            }
+            else{
+                $(this).addClass('feedback-img-icon-like')
+                return false;
+            }
+        });
+        $('.btn-login').click(function(){
+            $('.modal-login').css('display','none');
+            $('.login,.register').addClass('hidden__user')
+            $('.hd__navbar-user').addClass('active__user')
+        });
+    });
+</script>
+</html>
